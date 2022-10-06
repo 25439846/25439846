@@ -1,0 +1,29 @@
+
+In this tutorial, we will introduce you to wifi hacking automation tool called wifite. it is an helpful tool to automate wifi hacking against multiple WEP, WPA, WPS encrypted networks at the same time.
+
+aircrack-ng suite is required for the tool. However tools like tshark, coWPAatty, reaver, bully, pyrit are also recommended for better performance.
+
+Wifite Installation
+git clone https://github.com/derv82/wifite2.git
+cd wifite2
+sudo ./Wifite.py
+The sudo ./Wifite.py --help will print the help menu.
+
+Help menu of wifite tool
+Wifite Usage
+Firstly, Start the tool by sudo ./Wifite.py
+As a result, it automatically detects the wireless adapter and scans for available wifi access points. In addition, it will list the targets. Select an access point from the list.
+
+After that, tool automatically captures the handshakes and saves in /hs folder.
+On obtaining a valid handshake it will run a dictionary attack using wordlist-top4800-probable.txt. If password not found, we can try with more password lists.
+Capturing handshakes in wifite2
+To crack a pre-captured handshake handshake use sudo ./Wifite.py --crack We can specify other dictionaries using the –dict key.
+wifite cracking example
+At last, it will show you the password. Similarly wifite is able to hack other encryptions like WEP, WPS also.
+
+Conclusion
+Wifite is an automated wireless attack tool. Hackers can combine wifi attacks together for increased efficiency with wifite tool. It aims to be the “set it and forget it” wireless auditing tool.
+
+I’m here to share what I know, and as always I hope you will make correction where I’m wrong, because it is from mistakes that we learn. Happy hacking …😊
+
+Wifi Hacking hack wifi, wifi hacking, wifi password, wifite, wpa
